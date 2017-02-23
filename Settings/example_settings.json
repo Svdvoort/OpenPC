@@ -1,0 +1,39 @@
+{
+	"pol_order": 3,
+	"grid_level": 3,
+	"quadrature_type": ["gauss"],
+	"input_distribution": ["gaussian", "uniform", "gamma", "beta"],
+	"grid_type": "sparse",
+	"trim": 0,
+	"remove_small_elements": 1,
+	"small_element_threshold": 1e-13,
+
+	"blackbox_function": "example_problem",
+
+	"blackbox_arguments": {
+		"problem_number": 4
+	},
+
+	"pdf_settings": {
+		"pdf_parameters": [
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"a": -2,
+				"b": 5
+			},
+			{
+				"a": 0,
+				"scale": 1
+			},
+			{
+				"alpha": 0,
+				"beta": 0,
+				"a": -3,
+				"b": 3
+			}
+		]	
+	}
+}

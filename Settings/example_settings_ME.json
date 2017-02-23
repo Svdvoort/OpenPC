@@ -1,0 +1,50 @@
+{
+	"pol_order": 3,
+	"grid_level": 3,
+	"quadrature_type": ["gauss"],
+	"input_distribution": ["arbitrary", "arbitrary", "gaussian"],
+	"grid_type": "sparse",
+	"trim": 0,
+	"remove_small_elements": 1,
+	"small_element_threshold": 1e-13,
+
+	"blackbox_function": "example_problem_ME",
+
+	"blackbox_arguments": {
+		"problem_number": 3
+	},
+
+	"pdf_settings": {
+		"pdf_parameters": [
+			{
+				"pdf_function": "truncated_gaussian",
+				"elements": [{
+					"a": -8,
+					"b": -3
+				}, {
+					"a": -3,
+					"b": 3
+				}, {
+					"a": 3,
+					"b": 8
+				}],
+				"mean": 0,
+				"std": 2
+			},{
+				"pdf_function": "truncated_gaussian",
+				"elements": [{
+					"a": -3,
+					"b": -1
+				}, {
+					"a": -1,
+					"b": 3
+				}],
+				"mean": 0,
+				"std": 2
+			}, {
+				"mean": 0,
+				"std": 1
+			}
+		]	
+	}
+}
