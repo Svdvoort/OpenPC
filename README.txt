@@ -1,5 +1,14 @@
 OpenPC is a toolbox for the creation and evaluation of Multi-Element Generalized Polynomial Chaos Expansions
 
+When using this toolbox, please cite:
+
+Perkó, Zoltán, et al. "Fast and accurate sensitivity analysis of IMPT treatment plans using Polynomial Chaos Expansion." Physics in medicine and biology 61.12 (2016): 4646.
+
+and
+
+Van Der Voort, Sebastian, et al. "Robustness recipes for minimax robust optimization in intensity modulated proton therapy for oropharyngeal cancer patients." International Journal of Radiation Oncology* Biology* Physics 95.1 (2016): 163-170.
+
+
 QUICK START
 ----------------
 
@@ -7,9 +16,10 @@ To use OpenPC to make the PCE of a problem two things need to be provided: A set
 
 Three example settings files are provided in the settings folder.
 Example_settings.json contains the settings for a simple 4 dimensional problem. 
+
 As reference for the meaning of the different terms it is suggested to read: Perkó, Zoltán, et al. "Fast and accurate sensitivity analysis of IMPT treatment plans using Polynomial Chaos Expansion." Physics in medicine and biology 61.12 (2016): 4646.
-Example_settings_arbitrary.json contain the settings for a problem where an arbitrary PDF is defined, which can be found in Multi/PDF/
-Example_settings_ME.json for the construction of a multi-element Polynomial Chaos Expansion.
+
+Example_settings_arbitrary.json contain the settings for a problem where an arbitrary PDF is defined, which can be found in Multi/PDF/Example_settings_ME.json for the construction of a multi-element Polynomial Chaos Expansion.
 
 Each of the settings has an example run in Examples/, first run initOpenPC from the main directory and then run one of the examples.
 
