@@ -13,27 +13,24 @@ function coefficients = calculate_coefficients(cubature, output, PCE, SettingsPC
 %          coefficients: The calculated coefficients of the expansion [M x
 %          K matrix, where K is the number of basis vectors]
 
+        % First calculate the polynomial value for all scenarios
+        pol_val = evaluate_polynomial(PCE.pol_type, PCE.basis, transpose(cubature.scenarios), SettingsPCE);
 
         % Calculate the coefficients
-        if SettingsPCE.mem_saving
-            % If memory saving is enabled, iterate over all scenarios
-            % Smaller matrix sizes, but much slower
-            coefficients = zeros(1, size(PCE.basis, 1));
+        if settings.mem_saving
+            coefficients_new = zeros(1, size(PCE.basis, 1));
         
             scenarios = transpose(cubature.scenarios);
            for i_scenario = 1:size(scenarios, 2)
              pol_val = evaluate_polynomial(PCE.pol_type, PCE.basis, scenarios(:, i_scenario), SettingsPCE);
-             coefficients = coefficients + output(i_scenario, :)*pol_val*cubature.total_weights(i_scenario);
-           end
-        else
-            % If not memory saving, fast calculation of coefficients
-            % Using complete marix at once
-            pol_val = evaluate_polynomial(PCE.pol_type, PCE.basis, transpose(cubature.scenarios), SettingsPCE);
-            coefficients = transpose(output)*bsxfun(@times, pol_val, cubature.total_weights);
-        end       
+             coefficients_new = coefficients_new + output(i_scenario, :)*pol_val*cubature.total_weights(i_scenario);
+       end
+        coefficients = transpose(output)*bsxfun(@times, pol_val, cubature.total_weights);
+
+        
         
        
-        coefficients = bsxfun(@rdivide, coefficients, transpose(PCE.norm));
+        coefficients_new = bsxfun(@rdivide, coefficients_new, transpose(PCE.norm));
         
         if SettingsPCE.remove_small_elements
             coefficients(abs(coefficients) < SettingsPCE.small_element_threshold) = 0;

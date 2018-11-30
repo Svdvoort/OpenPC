@@ -17,6 +17,7 @@ function SettingsPCE = load_settings(settings_file)
     SettingsPCE.grid_level = uint8(SettingsPCE.grid_level);
     SettingsPCE.trim = logical(SettingsPCE.trim);
     SettingsPCE.remove_small_elements = logical(SettingsPCE.remove_small_elements);
+    SettingsPCE.mem_saving = logical(SettingsPCE.mem_saving);
     
     SettingsPCE.pol_type = get_pol_type(SettingsPCE.input_distribution);
     SettingsPCE.quadrature_type = construct_quad_types(SettingsPCE.quadrature_type, SettingsPCE.pol_type);    

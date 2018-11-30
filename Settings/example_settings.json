@@ -1,8 +1,18 @@
 {
 	"pol_order": 3,
 	"grid_level": 3,
+    "mem_saving": 1,
 	"quadrature_type": ["gauss"],
-	"input_distribution": ["gaussian", "uniform", "gamma", "beta"],
+	"input_distribution": ["gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian",
+"gaussian", "gaussian", "gaussian", "gaussian","gaussian","gaussian","gaussian","gaussian","gaussian","gaussian"],
 	"grid_type": "sparse",
 	"trim": 0,
 	"remove_small_elements": 1,
@@ -21,19 +31,441 @@
 				"std": 1
 			},
 			{
-				"a": -2,
-				"b": 5
+				"mean": 0,
+				"std": 1
 			},
 			{
-				"a": 0,
-				"scale": 1
+				"mean": 0,
+				"std": 1
 			},
 			{
-				"alpha": 0,
-				"beta": 0,
-				"a": -3,
-				"b": 3
-			}
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			},
+			{
+				"mean": 0,
+				"std": 1
+			}			
 		]	
 	}
 }
